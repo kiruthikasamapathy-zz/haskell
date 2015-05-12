@@ -50,7 +50,28 @@
   - [x*2 | x <- [1..10], x > 5, x /= 5] - Returns a list building with x * 2, where x is pulled from given list
   and satisfies the given conditions as x > 5 and x is not equal to 5
   - Conditions are called predicates; there could be multiple predicates;
-  
+  - Nested comprehenstion lists
+
+* Tuples
+  - Similar to list, but not exactly same
+  - Must know number of values and type up front
+  - Not homogeneous
+  - fst, snd - works only on pairs
+  - zip - Returns list of tuple pairs from given two lists
+
+* TypeClasses
+  - Kind of interface which defines some behaviour
+  - Eq
+  - Ord (must be a member of Eq as well)
+      <, >, compare
+  - show - Represented as string
+  - read - Takes a string and returns its type
+  - enum
+  - bounded
+    minBound, maxBound
+
+* Syntax in functions
+
 
 GHCI
 * Help on functions
