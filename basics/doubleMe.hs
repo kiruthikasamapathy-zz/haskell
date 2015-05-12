@@ -1,0 +1,1 @@
+doubleMe z = z + z

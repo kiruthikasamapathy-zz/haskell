@@ -1,0 +1,61 @@
+* Pure functional programming
+* Lazy
+* Statistically typed
+* Type inference
+  - That means that you don't have to explicitly label every piece of code with a type because the type system can intelligently figure out a lot about it.
+  - If you say a = 5 + 4, you don't have to tell Haskell that a is a number, it can figure that out by itself.
+
+* Basic operators
+ ==, /=
+ True, not True, False (case sensitive)
+
+ * Functions
+  - Infix
+  - Prefix
+
+* Function
+  - Every function should return something
+  - Function name cannot start with an upper case
+  - Function name followed by ` denotes strict function (eg: not a lazy function)
+
+* List
+  - Homogenous data structure
+  - ++ puts two lists together
+  - 5: [1,2,3,4] = [5,1,2,3,4] (called cons operator)
+  - !! - To get an element out of the list by index
+  - compare operators could be used
+  - head - Returns first element
+  - tail - Returns the list except head
+  - last - Returns last element
+  - init - Everything excet first element
+  - length
+  - null - To check if list is null or not
+  - reverse
+  - take - Extract that many elements from the head of the list
+  - drop - Drops that many elements from the beginning of the list
+  - maximum - Returns biggest element
+  - minimum
+  - sum - Returns sum of all elements in the list
+  - product
+  - 4 `elem` [1,2,3,4] - is 4th element present in the given list?
+
+* Ranges
+  - [1..10] - List of 1 to 10
+  - [2,4..10] - list of 2,4,6,8,10; can define only first two elements;
+  - cycle [1,2] - Infinite list
+  - repeat 5 - Returns infinite list of given element
+  - replicate 2 [1,2] - [[1,2], [1,2]]
+
+* List comprehensions
+  - [x*2 | x <- [1..10], x > 5, x /= 5] - Returns a list building with x * 2, where x is pulled from given list
+  and satisfies the given conditions as x > 5 and x is not equal to 5
+  - Conditions are called predicates; there could be multiple predicates;
+  
+
+GHCI
+* Help on functions
+  - :info functionName
+  - :i functionName
+
+Haskell tips & tricks
+  - Function application (calling a function by putting a space after it and then typing out the parameters) has the highest precedence
