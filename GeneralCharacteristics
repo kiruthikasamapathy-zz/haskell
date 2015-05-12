@@ -79,6 +79,17 @@
   - let in
   - case expression
 
+* Recursion
+  - Edge cases
+  - Guards
+  - Let in
+  - value + recursive function call
+
+* Higher order functions
+  - can take function as parameter and return a function as result
+  - Every function officially takes only one parameter
+  - indentation matters........ where
+
 GHCI
 * Help on functions
   - :info functionName
