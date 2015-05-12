@@ -71,7 +71,13 @@
     minBound, maxBound
 
 * Syntax in functions
-
+  - Pattern matching
+      direct binding
+  - Guards
+      Has expression to evaluate and verify
+  - where
+  - let in
+  - case expression
 
 GHCI
 * Help on functions

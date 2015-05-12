@@ -1,0 +1,1 @@
+head' input = case input 
