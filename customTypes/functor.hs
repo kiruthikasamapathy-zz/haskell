@@ -1,0 +1,1 @@
+class Functor1 f where  fmap :: (a -> b) -> f a -> f binstance Functor1 Maybe where  fmap f (Just x) = Just (f x)  fmap f Nothing = Nothing
